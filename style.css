@@ -1,0 +1,214 @@
+/* Reset de estilos para padronizar os navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* página no geral */
+body {
+    background-color: #f3e2d1; 
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: rgb(255, 232, 250);
+    width: 80%;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Cabeçalho */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 20px;
+}
+
+header div {
+    text-align: left;
+    flex: 1;
+}
+
+header img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #333;
+    margin-left: auto;
+}
+
+/* Contatos */
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    font-size: 12px;
+    color: #555;
+    margin-top: 5px;
+}
+
+.contact p {
+    margin: 0;
+    white-space: nowrap;
+}
+
+.contact a {
+    color: #929090;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+/* Informações */
+.info {
+    flex-grow: 1;
+    text-align: left;
+}
+
+.email, .telefone, .github, .linkedin {
+    font-size: 12px;
+    color: #555;
+    margin-top: 5px;
+    line-height: 1.5;
+}
+
+.email a, .telefone a, .github a, .linkedin a {
+    display: block;
+    color: #888888;
+    text-decoration: none;
+}
+
+.email a:hover, .telefone a:hover {
+    text-decoration: underline;
+}
+
+/* títulos */
+h2 {
+    border-bottom: 2px solid #e964d7;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+/* Listas */
+ul {
+    list-style-type: none;
+    padding-left: 10px;
+}
+
+/* Links gerais */
+a {
+    color: #070707;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #005599;
+    text-decoration: underline;
+}
+
+/* Seção de habilidades */
+#habilidades {
+    background-color: rgb(255, 232, 250);
+    padding: 10px;
+    /*border-left: 4px solid #d63384;*/
+    width: fit-content;
+}
+
+#habilidades ul {
+    list-style: none;
+    padding: 0;
+}
+
+#habilidades li {
+    font-size: 18px;
+    
+}
+
+.subtexto {
+    color: #777;
+    font-size: 14px;
+    display: block;
+    margin-top: 5px;
+}
+
+/* Layout lado a lado */
+.metade-tela {
+    display: flex;
+    gap: 20px;
+}
+
+.metade-tela section {
+    flex: 1;
+    background-color: rgb(255, 232, 250);
+    padding: 15px;
+    border-radius: 8px;
+}
+
+/* Estilização das instituições */
+.instituicao {
+    color: #777;
+    font-size: 14px;
+    display: block;
+    margin-top: 5px;
+}
+
+
+
+.curso {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.ano {
+    color: #777;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* projetos */
+.projetoss {
+    color: #f7f0f0;
+    font-size: 12px;
+    display: block;
+    margin-top: 2px;
+}
+#resumo p {
+    color: #312f2f;
+    font-size: 14px;
+    display: block;
+    margin-top: 5px;
+
+    text-align: justify;
+}
+
+
+
+.descricoes {
+    color: #777;
+    font-size: 14px;
+    display: block;
+    margin-top: 5px;
+
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .metade-tela {
+        flex-direction: column;
+    }
+}
